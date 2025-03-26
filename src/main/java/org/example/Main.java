@@ -1,25 +1,24 @@
 package org.example;
 
 
-import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
+       int num1 = 0;    // 0 출력하기 위해 필요하니까
+       int num2 = 1;    // 1 출력하기 위해 필요하니까
+       int num3;    // num3 빈 공간용
 
-        int n = sc.nextInt();
 
-        // 빈칸 출력
-        for (int i = 0; i < n; i++) {       // i가 n까지 반복
-            for (int j = 0; j < i; j++) {   // j가 i까지 빈칸 출력
-                System.out.print(" ");
-            }
+       for (int i = 0; i < 10; i++) {   // 정수 10개가 필요하니까 i가 0부터 10까지 반복
 
-            for (int k = n - i; k > 0 ; k--) {  // k가 입력된 정수에서 i를빼고, k가 0까지 감소 반복
-                System.out.print(k + " ");  // 입력된 정수부터 감소시킨걸 출력하기 위해 k + " "출력
-            }
-            System.out.println();   // 역 피라미드로 나타내기 위해 줄바꿈 출력
-        }
+           System.out.print(num1+ " "); // num1값 출력
+
+
+           num3 = num2;     // num3은 비어있기 때문에 num2 (=1) 을 저장
+           num2 = num1 + num2;  // num2에 num1과 num2를 더한 값 저장
+           num1 = num3;  // num1에 num3값 저장
+       }
+
     }
 }
