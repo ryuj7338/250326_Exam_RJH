@@ -15,9 +15,9 @@ public class Main {
            System.out.print(num1+ " "); // num1값 출력
 
 
-           num3 = num2;     // num3은 비어있기 때문에 num2 (=1) 을 저장
-           num2 = num1 + num2;  // num2에 num1과 num2를 더한 값 저장
-           num1 = num3;  // num1에 num3값 저장
+           num3 = num2;     // num3은 비어있기 때문에 num2 (=1) 을 저장 -> 0 / 1 / 2 / 3 ~
+           num2 = num1 + num2;  // num2에 num1과 num2를 더한 값 저장 -> 1 / 2 / 3 / ~
+           num1 = num3;  // num1에 num3값 저장 -> 1 / 1 / 2 / ~
        }
 
     }
